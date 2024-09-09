@@ -1,0 +1,452 @@
+<?php
+session_start();
+$_SESSION['num1'] = rand(1, 10);
+$_SESSION['num2'] = rand(1, 10);
+?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Empresa de Jardinería y Mantenimiento de Espacios Verdes</title>
+    <meta
+      name="description"
+      content="Los más exigentes confían en Turftype como empresa de jardinería y mantenimiento de espacios verdes. Mantenimiento y Jardinería. Servicio de mantenimiento y jardinería de espacios verdes para empresas, urbanizaciones, countries, parques industriales y grandes superficies. Trabajamos en conjunto con estudios de paisajismo, arquitectura o DDO para la interpretación y puesta en marcha en la Construcción del Paisaje. Realizamos el diseño, provisión e instalación de sistemas de riego automatizados para pequeñas y grandes superficies. Servicio de ayudas de gremio y cuadrillas especializadas para tareas de temporada y obras en superficies deportivas."
+    />
+    <meta
+      name="keywords"
+      content="jardinería, mantenimiento de espacios verdes, empresa de jardinería, Turftype, paisajismo, sistemas de riego, mantenimiento de jardines, espacios verdes para empresas, urbanizaciones, parques industriales, grandes superficies, construcción del paisaje, estudios de paisajismo, arquitectura, diseño de jardines, riego automatizado, obras en superficies deportivas, cuadrillas especializadas, servicio de gremio, mantenimiento de jardines comerciales, jardinería para countries"
+    />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+<!-- Google Adwords tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5JQTL8B0YF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5JQTL8B0YF');
+</script>
+
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+<header id="header" class="fixed-top header-transparent">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo">
+      <a href="index.php">
+        <img src="assets/img/turftype-espacios-verdes.webp" alt="turftype logo" class="img-fluid logo-img"/>
+      </a>
+      <img
+              src="assets/img/iconos-ventajas-turftype.webp"
+              class="img-fluid w-75 beneficios"
+              alt="beneficios"
+            />  
+    </div>
+    <div class="logo2 d-flex flex-column align-items-left text-center">
+      <img src="assets/img/asesoramiento-experto.webp" alt="asesoramiento experto logo" class="img-fluid asesoramiento-img"/>
+      <a href="https://api.whatsapp.com/send?phone=+541151116776&text=Hola,%20necesito%20asesorameinto%20especializado%20en%20jardiner%C3%ADa..." class="mt-2 telephone">
+        <span class="telephone2 pe-1">011</span>51116776
+      </a>
+    </div>    
+  </div>
+</header>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row">
+          <!-- Imagen -->
+          <div
+            class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start order-1 order-lg-2 hero-img"
+            data-aos="fade-up"
+          >          
+           <!-- Imagen para dispositivos de escritorio -->
+          <img src="assets/img/imagen-collage-desktop.webp" class="img-fluid collageImg d-none d-md-block" alt="collage parque" />
+          <!-- Imagen para dispositivos móviles -->
+          <img src="assets/img/imagen-collage-mobile.webp" class="img-fluid collageImg d-block d-md-none" alt="collage parque" />
+          </div>
+          <!-- Texto -->
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+          >
+            <div class="heroTitle">
+              <h1>
+                <span>Los más exigentes confían en Turftype como</span>
+                empresa de jardinería y mantenimiento de espacios verdes.
+              </h1>
+              <h2 class="d-none d-md-block">
+                Barrios cerrados <span>•</span> Empresas <span>•</span> Urbanizaciones <span>•</span> Grandes superficies <span>•</span> Parques Industriales <span>•</span> Condominios
+              </h2>
+              <div class="d-flex mb-3">
+                <svg class="mailIcon img-fluid" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.5947 19H6.2C5.07989 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2C3 7.0799 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H17.8C18.9201 5 19.4802 5 19.908 5.21799C20.2843 5.40973 20.5903 5.71569 20.782 6.09202C21 6.51984 21 7.0799 21 8.2V12M20.6067 8.26229L15.5499 11.6335C14.2669 12.4888 13.6254 12.9165 12.932 13.0827C12.3192 13.2295 11.6804 13.2295 11.0677 13.0827C10.3743 12.9165 9.73279 12.4888 8.44975 11.6335L3.14746 8.09863M18 13.5L19.4107 15.5584L21.8042 16.2639L20.2825 18.2416L20.3511 20.7361L18 19.9L15.6489 20.7361L15.7175 18.2416L14.1958 16.2639L16.5893 15.5584L18 13.5Z" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              <h3>Solicitá Asesoramiento Profesional personalizado e inmediato</h3>
+              </div>
+              <a href="#contact" class="btn-link mb-3">Asesoramiento y Cotización</a>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= App Features Section 1 ======= -->
+      <section id="features" class="features mt-1">
+        <div class="container">
+          <div class="section-title">
+            <h2>Somos especialistas en <span>mantenimiento y <br>jardinería</span> de grandes espacios verdes.</h2>            
+            <div class="divider"></div>
+          </div>    
+          <div class="row no-gutters specs">
+            <div class="col-12 d-flex align-items-stretch">
+              <div class="content d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div class="col-md-3 icon-box" data-aos="fade-up">
+                    <div class="icon-text-container d-flex row justify-content-center">
+                      <img
+                        src="assets/img/espacios-verdes-icon-1.webp"
+                        class="img-fluid"
+                        style="width: 160px; height: auto"
+                        alt="icono"
+                      />
+                      <div class="text-fix-item text-center">
+                        <h4>Mantenimiento y Jardinería</h4>
+                        <p>
+                          Servicio de <strong>mantenimiento y jardinería de espacios verdes</strong> para empresas, urbanizaciones, countries, parques industriales y grandes superficies.
+                        </p>
+                        <div class="btn-container">
+                          <a href="#contact" class="btn-link mt-3">Más Info</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 icon-box" data-aos="fade-up">
+                    <div class="icon-text-container d-flex row justify-content-center">
+                      <img
+                        src="assets/img//proyectos-paisaje-icon-1-1.webp"
+                        class="img-fluid"
+                        style="width: 160px; height: auto"
+                        alt="icono"
+                      />
+                      <div class="text-fix-item text-center">
+                        <h4>Ejecución de Proyectos de Paisaje</h4>
+                        <p>
+                          Trabajamos en conjunto con estudios de paisajismo, arquitectura o DDO para la <strong>interpretación y puesta en marcha en la Construcción del Paisaje.</strong>
+                        </p>
+                        <div class="btn-container">
+                          <a href="#contact" class="btn-link mt-3">Más Info</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 icon-box" data-aos="fade-up">
+                    <div class="icon-text-container d-flex row justify-content-center">
+                      <img
+                        src="assets/img/sistemas-riego-icon-1.webp"
+                        class="img-fluid"
+                        style="width: 160px; height: auto"
+                        alt="icono"
+                      />
+                      <div class="text-fix-item text-center">
+                        <h4>Sistemas de Riego</h4>
+                        <p>
+                          Realizamos el <strong>diseño, provisión e instalación de sistemas de riego automatizados</strong> para pequeñas y grandes superficies.
+                        </p>
+                        <div class="btn-container">
+                          <a href="#contact" class="btn-link mt-3">Más Info</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 icon-box" data-aos="fade-up">
+                    <div class="icon-text-container d-flex row justify-content-center">
+                      <img
+                        src="assets/img/provision-personal-icon-1.webp"
+                        class="img-fluid"
+                        style="width: 160px; height: auto"
+                        alt="icono"
+                      />
+                      <div class="text-fix-item text-center">
+                        <h4>Provisión de Personal</h4>
+                        <p>
+                          Servicio de <strong>ayudas de gremio y cuadrillas especializadas</strong> para tareas de temporada y obras en superficies deportivas.
+                        </p>
+                        <div class="btn-container">
+                          <a href="#contact" class="btn-link mt-3">Más Info</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>      
+
+     <!-- ======= App Testimony Section ======= -->
+     <section id="testimony" class="testimony">
+      <div class="container">
+        <div class="section-title-testimony text-center">
+          <h2>Casos de <span>éxito</span>, clientes <span>felices!</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="row no-gutters">
+          <!-- Primer bloque: Imagen a la izquierda, texto a la derecha -->
+          <div class="col-md-12 d-flex align-items-center flex-column flex-md-row">
+            <div class="col-md-6 order-0">
+              <img
+                src="assets/img/estrellas.webp"
+                class="img-fluid"
+                style="width: 150px; height: auto"
+                alt="icono"
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center text-center ps-md-4 order-0 order-md-1 mt-4 mt-md-0">
+              <h5>Mercado Libre Tesla</h5>
+              <p>
+                Ejecución de Proyecto de Paisaje llevado adelante para el Estudio de Paula de Elía y Milagros Irastorza, con el Diseño del Estudio Bulla. Construcción de terraza verde y diferentes estructuras de canteros y macetas en los diferentes pisos de las Oficinas de Mercado Libre en Parque Patricios.
+              </p>
+              <div class="btn-container">
+                <a href="#contact" class="btn-link mt-3">Más Info</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Segundo bloque: Imagen a la derecha, texto a la izquierda -->
+          <div class="col-md-12 d-flex align-items-center mb-5 flex-column flex-md-row">
+            <div class="col-md-6 order-1 order-md-2">
+              <img
+                src="assets/img/estrellas.webp"
+                class="img-fluid"
+                style="width: 150px; height: auto"
+                alt="icono"
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center text-center pe-md-4 order-0 order-md-1 mt-md-0">
+              <h5>Ánima</h5>
+              <p>
+                Servicio de construcción de terrazas verdes por unidad funcional, con el diseño de Estudio Bulla.
+              </p>
+              <div class="btn-container">
+                <a href="#contact" class="btn-link mt-3">Más Info</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>    
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact d-flex justify-content-center">
+        <div class="container row justify-content-center mt-5" data-aos="fade-up">
+          <div class="col-lg-6 align-items-center">
+            <img
+              src="assets/img//compresor-schulz-piston.webp"
+              alt="compresor shulz a piston"
+              class="img-fluid w-75 ms-5"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2>Hablemos de compresores.</h2>
+            <h3>Venta de Compresores Industriales</h3>
+            <p>
+              Solicitamos unos pocos datos de contacto y un <span>especialista</span> se comunicará a la mayor brevedad posible.
+            </p>
+            <div class="col-lg-12">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+                data-aos="fade-up"           
+              >
+                <div class="form-group">
+                  <input
+                    placeholder="Nombre *"
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    placeholder="Teléfono de Contacto *"
+                    type="phone"
+                    class="form-control"
+                    name="phone"
+                    id="phone"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    placeholder="Empresa"
+                    type="text"
+                    class="form-control"
+                    name="company"
+                    id="company"
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    placeholder="Provincia"
+                    type="text"
+                    class="form-control"
+                    name="province"
+                    id="province"
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    placeholder="Comentarios"
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <!-- Pregunta matemática -->
+                <?php
+                // Mostrar la pregunta matemática
+                echo '<div class="form-group mt-3">';
+                echo '<p>Verifiquemos que no eres un robot 🤖:</p>';
+                echo '<label for="math-captcha">¿Cuánto es ' . $_SESSION['num1'] . ' + ' . $_SESSION['num2'] . '?</label>';
+                echo '<input
+                        type="text"
+                        id="math-captcha"
+                        name="math-captcha"
+                        class="form-control"
+                        placeholder="Escribe la respuesta"
+                        required
+                      />';
+                echo '</div>';
+              ?>
+                <div class="my-3">
+                  <div class="loading">Enviando...</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Tu mensaje ha sido enviado. Gracias!
+                  </div>
+                </div>
+                <div class="text-center mt-3">
+                  <button class="btn-link" type="submit">
+                    Enviar. Espero su contacto
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+      <!-- WhatsApp Button -->
+       
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start"
+          >
+            <img
+              src="assets/img/schulz.webp"
+              alt="logo schulz"
+              class="img-fluid logo-img w-75"
+          />
+          </div>
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center text-center"
+          >
+            <p class="pb-2 pt-2 pb-md-0 pt-md-0 copyright">
+              © 2024. Todos los Derechos Reservados.
+            </p>
+          </div>
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end"
+          >
+          <img
+              src="assets/img/herrafer.webp"
+              alt="logo herrafer"
+              class="img-fluid logo-img"
+          />
+          </div>
+        </div>
+      </div>
+      <img src="assets/img/pie-planta-industrial-schulz.webp" alt="planta industrial shculz" class="footer-planta">
+    </footer>
+
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <a id="whatsapp-button" class="whatsapp-button" href="https://api.whatsapp.com/send?phone=+5493516594410&text=Necesito%20asesoramiento%20especializado%20de%20Compresores%20Schulz" target="_blank">
+      <img src="assets/img/whatsapp-logo.svg" alt="WhatsApp">
+  </a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  
+  <!-- Conversión de Botón de WhatsApp -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const whatsappButton = document.getElementById('whatsapp-button');
+      if (whatsappButton) {
+        whatsappButton.addEventListener('click', function() {
+          gtag('event', 'conversion', {'send_to': 'AW-16625389516/OH2hCJvDj8QZEMyfzfc9'});
+        });
+      }
+    });
+  </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
