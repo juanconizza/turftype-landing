@@ -73,20 +73,10 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: all 0.5s;
-  z-index: 997;
+  transition: all 0.5s; 
   transition: all 0.5s;
   padding: 15px 0;
   background: #203216;
-}
-
-#header.header-transparent {
-  background: #203216;
-}
-
-#header.header-scrolled {
-  background: #203216;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header .logo h1 {
@@ -103,8 +93,12 @@ h6 {
 }
 
 #header .logo .beneficios {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 20px;  
+}
+
+#hero .beneficiosMobile {
+  display: none;
 }
 
 #header .logo2 img {
@@ -128,24 +122,28 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  #header .logo .beneficios {
+    display: none;
+  }
+
+  #hero .beneficiosMobile {
+    display: block;
+  }
+
   #header .logo .logo-img {
     margin: 0;
     height: 160px;
-  }
-  
-  #header .logo .beneficios {
-    margin-top: 0px;
-    margin-left: 10px;  
-  }
+  }  
 
-  #header .logo2 img {
-    margin: 0;  
-    width: 200px; 
+  #header .logo2 .asesoramiento-img {
+    margin: 0;
+    margin-bottom: -10px;  
+    width: 140px;    
   }
 
   #header .logo img {
     margin: 0;
-    max-height: 70px;
+    max-height: 90px;
   }
 
   #header .logo2 .telephone {
@@ -153,52 +151,15 @@ h6 {
     font-size: 35px;
     font-weight: 500;
     color: white;
-    letter-spacing: 2px
-  }
-  
-  #header .logo2 .asesoramiento-img {
-    width: 100px !important; /* Ajusta el tamaño según sea necesario */
- 
-  }
+    letter-spacing: 2px;    
+  }  
 
   #header .logo2 .telephone {
-    font-size: 14px !important; /* Ajusta el tamaño según sea necesario */
+    font-size: 27px !important; /* Ajusta el tamaño según sea necesario */
   }
 
   #header .logo2 .telephone2 {
-    font-size: 14px !important; /* Ajusta el tamaño según sea necesario */
-  }
-}
-
-@media (max-width: 375px) {
-  #header .logo2 img {
-    margin: 0;  
-    width: 200px; 
-  }
-
-  #header .logo img {
-    margin: 0;
-    max-height: 70px;
-  }
-  
-  #header .logo2 .telephone {
-    font-family: "Montserrat";
-    font-size: 35px;
-    font-weight: 500;
-    color: white;
-    letter-spacing: 2px
-  }
-
-  #header .logo2 .asesoramiento-img {
-    width: 80px !important; /* Ajusta el tamaño según sea necesario */
-  }
-
-  #header .logo2 .telephone  {
-    font-size: 12px !important; /* Ajusta el tamaño según sea necesario */
-  }
-
-  #header .logo2 .telephone2 {
-    font-size: 12px !important; /* Ajusta el tamaño según sea necesario */
+    font-size: 27px !important; /* Ajusta el tamaño según sea necesario */
   }
 }
 
@@ -209,7 +170,7 @@ h6 {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding: 170px 0 60px 0;
+  padding: 10px 0 10px 0;
 }
 
 #hero::before {
@@ -230,19 +191,17 @@ h6 {
 }
 
 #hero .heroTitle{
-  margin: 50px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
-#hero h1 {
-  margin: 0 0 10px 0;
+#hero h1 {  
   font-size: 40px;  
   line-height: 56px;
   color: #ffff;
   font-family: "Montserrat", sans-serif;
 }
 
-#hero h1 span {
-  margin: 0 0 10px 0;
+#hero h1 span {  
   font-size: 40px;  
   line-height: 56px;
   color: #9df56d;
@@ -272,7 +231,7 @@ h6 {
 
 #hero .collageImg {
   width: 95%;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 #hero .btn-link {
@@ -299,6 +258,24 @@ h6 {
 }
 
 @media (max-width: 991px) {
+  #hero h1 {  
+    font-size: 23px;  
+    line-height: 40px;
+    color: #ffff;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  #hero h1 span {  
+    font-size: 23px;  
+    line-height: 40px;
+    color: #9df56d;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #hero .collageImg {
+    width: 95%;
+    margin-top: 0px;
+  }
   
   #hero {
     text-align: left;
@@ -319,7 +296,8 @@ h6 {
   #hero h3{
     color: #ffff;
     font-size: 16px;
-    margin-left: 15px; 
+    margin-left: 15px;
+    margin-top: 12px; 
   }
   
   #hero .mailIcon{
@@ -353,24 +331,10 @@ h6 {
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 80px 0 40px 0;  
+    padding: 10px 0 10px 0;  
 
   }  
-
-  #hero h1 {
-    font-size: 25px;
-    line-height: 36px;
   
-  }
-
-  #hero h1 span {
-    font-size: 25px;
-    line-height: 36px;
-  }
-
-  #hero h2, #hero h2 span {
-    font-size: 13px;
-    line-height: 24px;    
 }
 }
 
@@ -438,8 +402,8 @@ section {
 #features{
   background: linear-gradient(to bottom,
   #cccccc 0%,     
-  #cccccc 7%,
-  #ffffff 18%,  
+  #cccccc 0%,
+  #ffffff 10%,  
   #ffffff 100%    
 );
 }
@@ -506,6 +470,39 @@ section {
 
 
 @media (max-width: 767.98px) {
+  #features .icon-box{
+    margin-top: -30px;
+    margin-bottom: -40px;
+  }
+
+  #features img{
+    margin-bottom: 10px;
+  }
+   
+  #features .specs h4 {  
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    color: #82c100;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+  }
+  
+  #features .specs p {
+    margin-bottom: 3px; 
+    color: #575757;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    font-size: 17px;
+  } 
+  
+
+  #features{
+    background: linear-gradient(to bottom,
+    #cccccc 0%,     
+    #cccccc 0%,
+    #ffffff 5%,  
+    #ffffff 100%    
+  );
+  }
 
   section {    
     padding-top: 10px;
@@ -537,8 +534,8 @@ section {
   padding: 50px 0 30px 0;
   background: linear-gradient(to bottom,
   #cccccc 0%,     
-  #cccccc 7%,
-  #ffffff 15%,  
+  #cccccc 0%,
+  #ffffff 5%,  
   #ffffff 100%    
 );
 }
@@ -600,6 +597,12 @@ section {
 
 
 @media (max-width: 991px) {
+  #testimony .btn-container{
+    height: 150px;
+    margin-top: -20px;
+    margin-bottom: -60px;  
+  }
+
   #testimony {
     width: 100%;
     position: relative;
@@ -607,8 +610,8 @@ section {
     padding: 50px 0 30px 0;
     background: linear-gradient(to bottom,
     #cccccc 0%,     
-    #cccccc 7%,
-    #ffffff 15%,  
+    #cccccc 0%,
+    #ffffff 5%,  
     #ffffff 100%    
   );
   }
@@ -628,6 +631,10 @@ section {
     text-align: center;
     color: #517c37;
     font-family: "Montserrat", sans-serif;
+  }
+
+  #testimony h5{
+    margin-bottom: -2px;
   }
 
   #testimony
@@ -681,8 +688,8 @@ section {
   padding: 50px 0 100px 0;
   background: linear-gradient(to bottom, 
               #203216 0%,    
-              #203216 15%,
-              #4f7c37 50%,  
+              #203216 5%,
+              #4f7c37 17%,  
               #4f7c37 100%   
   );
 }
@@ -871,8 +878,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {  
-  padding: 30px 0 0 0;
+#footer {    
   font-size: 15px;
   background:#4f7c37
 }
@@ -880,12 +886,6 @@ section {
 #footer .copyright {  
   color:#9cf36e;
   font-size: 20px;  
-}
-
-#footer .footer-planta{
-  width: 100%;
-  height: auto;
-  padding-top: 20px;
 }
 
 .whatsapp-button {
