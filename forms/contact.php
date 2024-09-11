@@ -31,15 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mensaje_usuario = htmlspecialchars($_POST['message']);
 
         // Datos de la cuenta de correo utilizada para enviar vía SMTP
-        $smtpHost = "smtp.herrafersrl.com.ar";  // Dominio alternativo brindado en el email de alta 
+        $smtpHost = "smtp.turftype.com.ar";  // Dominio alternativo brindado en el email de alta 
         $smtpUsuario = "landing@herrafersrl.com.ar";  // Mi cuenta de correo
         $smtpClave = "Audio123";  // Mi contraseña
 
         // Dirección de correo electrónico donde quieres recibir los mensajes
-        $emailDestino = "info@herrafersrl.com.ar";
+        $emailDestino = "juanconizza@gmail.com";
 
         // Asunto del correo electrónico
-        $asunto_correo = "Landing Compresores Schulz - Nuevo contacto de $nombre";
+        $asunto_correo = "Landing Turf Type - Nuevo contacto de $nombre";
 
         // Crear una instancia de PHPMailer
         $mail = new PHPMailer();

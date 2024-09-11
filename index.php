@@ -52,7 +52,7 @@ $_SESSION['num2'] = rand(1, 10);
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-<!-- Google Adwords tag (gtag.js) -->
+<!-- Google Analytics tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JQTL8B0YF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -60,6 +60,9 @@ $_SESSION['num2'] = rand(1, 10);
   gtag('js', new Date());
   gtag('config', 'G-5JQTL8B0YF');
 </script>
+<!-- Google tag (gtag.js) --> 
+ <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11407146291"></script> 
+ <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11407146291'); </script>
 
   </head>
 
@@ -314,28 +317,28 @@ $_SESSION['num2'] = rand(1, 10);
             <div class="row">
               <!-- Primera fila: 4 imágenes -->
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_mercado-libre.webp" class="img-fluid" alt="Logo Cliente 1">
+                <img src="assets/img/turftype-clientes_mercado-libre.webp" class="img-fluid" alt="Ejecución de Proyectos de Paisaje. Servicio de Mantenimiento.">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_experta.webp" class="img-fluid" alt="Logo Cliente 2">
+                <img src="assets/img/turftype-clientes_experta.webp" class="img-fluid" alt="Construcción de terraza verde. Mantenimiento y mejoramiento de jardín vertical.">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_bricons.webp" class="img-fluid" alt="Logo Cliente 3">
+                <img src="assets/img/turftype-clientes_bricons.webp" class="img-fluid" alt="Servicio de Corte Mensual.">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_mirabosques.webp" class="img-fluid" alt="Logo Cliente 4">
+                <img src="assets/img/turftype-clientes_mirabosques.webp" class="img-fluid" alt="Corte y mantenimiento de espacios verdes.">
               </div>
             </div>          
             <div class="row justify-content-center">
               <!-- Segunda fila: 3 imágenes centradas -->
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_go-team-pilar.webp" class="img-fluid" alt="Logo Cliente 5">
+                <img src="assets/img/turftype-clientes_go-team-pilar.webp" class="img-fluid" alt="Corte mensual.">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_club-nautico-san-isidro.webp" class="img-fluid" alt="Logo Cliente 6">
+                <img src="assets/img/turftype-clientes_club-nautico-san-isidro.webp" class="img-fluid" alt="Construcción de senderos intertrabados. Ejecución de Proyectos de Paisaje. Personal Eventual para el Golf. Construcción de Drenajes, Nivelaciónes y Colocación de Carpetas de Césped en Cancha de Golf.">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_pilara.webp" class="img-fluid" alt="Logo Cliente 7">
+                <img src="assets/img/turftype-clientes_pilara.webp" class="img-fluid" alt="Mantenimiento mensual en espacios verdes y mejora del paisaje.">
               </div>
             </div>
           </div>
