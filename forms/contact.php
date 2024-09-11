@@ -31,12 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mensaje_usuario = htmlspecialchars($_POST['message']);
 
         // Datos de la cuenta de correo utilizada para enviar vía SMTP
-        $smtpHost = "smtp.turftype.com.ar";  // Dominio alternativo brindado en el email de alta 
-        $smtpUsuario = "landing@herrafersrl.com.ar";  // Mi cuenta de correo
+        $smtpHost = "exportech.es";  // Dominio alternativo brindado en el email de alta 
+        $smtpUsuario = "landing@turftype.com.ar";  // Mi cuenta de correo
         $smtpClave = "Audio123";  // Mi contraseña
 
         // Dirección de correo electrónico donde quieres recibir los mensajes
-        $emailDestino = "juanconizza@gmail.com";
+        $emailDestino = "sebastian.o.aguilar@gmail.com";
 
         // Asunto del correo electrónico
         $asunto_correo = "Landing Turf Type - Nuevo contacto de $nombre";
