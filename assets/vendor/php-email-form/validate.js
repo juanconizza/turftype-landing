@@ -66,7 +66,7 @@
       thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.trim() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
-        gtag('event', 'conversion', {'send_to': 'AW-11407146291/hN2pCJqvh9EZELP6rL8q'});
+        gtag('event', 'conversion', {'send_to': 'AW-11407146291/K5sjCJ-uh9EZELP6rL8q'});
         console.log("Conversion success!")
         thisForm.reset(); 
       } else {

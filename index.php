@@ -65,11 +65,8 @@ $_SESSION['num2'] = rand(1, 10);
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-5JQTL8B0YF');
+  gtag('config', 'AW-11407146291');
 </script>
-<!-- Google tag (gtag.js) --> 
- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11407146291"></script> 
- <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11407146291'); </script>
-
   </head>
 
   <body>
@@ -568,11 +565,13 @@ $_SESSION['num2'] = rand(1, 10);
       const whatsappButton = document.getElementById('whatsapp-button');
       if (whatsappButton) {
         whatsappButton.addEventListener('click', function() {
-          gtag('event', 'conversion', {'send_to': 'AW-16625389516/OH2hCJvDj8QZEMyfzfc9'});
+          gtag('event', 'conversion', {'send_to': 'AW-11407146291/hN2pCJqvh9EZELP6rL8q'});
         });
       }
     });
   </script>
+
+  
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
