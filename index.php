@@ -18,7 +18,13 @@ $_SESSION['num2'] = rand(1, 10);
       name="keywords"
       content="jardinería, mantenimiento de espacios verdes, empresa de jardinería, Turftype, paisajismo, sistemas de riego, mantenimiento de jardines, espacios verdes para empresas, urbanizaciones, parques industriales, grandes superficies, construcción del paisaje, estudios de paisajismo, arquitectura, diseño de jardines, riego automatizado, obras en superficies deportivas, cuadrillas especializadas, servicio de gremio, mantenimiento de jardines comerciales, jardinería para countries"
     />
-
+    <!-- Precarga de imagenes importantes -->    
+    <link rel="preload" href="assets/img/imagen-collage-desktop.webp" as="image">
+    <link rel="preload" href="assets/img/imagen-collage-mobile.webp" as="image">
+    <link rel="preload" href="assets/img/asesoramiento-experto.webp" as="image">
+    <link rel="preload" href="assets/img/turftype-espacios-verdes.webp" as="image">
+    <link rel="preload" href="assets/img/iconos-ventajas-turftype.webp" as="image">
+       
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -26,11 +32,11 @@ $_SESSION['num2'] = rand(1, 10);
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
+      rel="stylesheet" rel="preconnect"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" rel="preconnect"
     />
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
@@ -98,18 +104,19 @@ $_SESSION['num2'] = rand(1, 10);
               src="assets/img/iconos-ventajas-turftype.webp"
               class="img-fluid beneficiosMobile mx-auto mb-3"
               alt="beneficios"
-              style="width: 80%;"
+              style="width: 95%;"
             />  
           <!-- Imagen -->
-          <div
-            class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start order-1 order-lg-2 hero-img"
-            data-aos="fade-up"
-          >          
-           <!-- Imagen para dispositivos de escritorio -->
-          <img src="assets/img/imagen-collage-desktop.webp" class="img-fluid collageImg d-none d-md-block" alt="collage parque" />
-          <!-- Imagen para dispositivos móviles -->
-          <img src="assets/img/imagen-collage-mobile.webp" class="img-fluid collageImg d-block d-md-none" alt="collage parque" />
-          </div>
+          <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start order-1 order-lg-2 hero-img" data-aos="fade-up">
+            <picture>
+              <!-- Imagen para dispositivos móviles -->
+              <source srcset="assets/img/imagen-collage-mobile.webp" media="(max-width: 768px)" />
+              <!-- Imagen para dispositivos de escritorio -->
+              <source srcset="assets/img/imagen-collage-desktop.webp" media="(min-width: 769px)" />
+              <!-- Imagen predeterminada si no se cumplen las condiciones anteriores -->
+              <img src="assets/img/imagen-collage-desktop.webp" class="img-fluid collageImg" alt="collage parque" />
+            </picture>
+          </div>          
           <!-- Texto -->
           <div
             class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch pt-lg-0 order-2 order-lg-1"
@@ -155,6 +162,7 @@ $_SESSION['num2'] = rand(1, 10);
                         class="img-fluid"
                         style="width: 160px; height: auto"
                         alt="icono"
+                        loading="lazy"
                       />
                       <div class="text-fix-item text-center">
                         <h4>Mantenimiento y Jardinería</h4>
@@ -174,6 +182,7 @@ $_SESSION['num2'] = rand(1, 10);
                         class="img-fluid"
                         style="width: 160px; height: auto"
                         alt="icono"
+                        loading="lazy"
                       />
                       <div class="text-fix-item text-center">
                         <h4>Ejecución de Proyectos de Paisaje</h4>
@@ -193,6 +202,7 @@ $_SESSION['num2'] = rand(1, 10);
                         class="img-fluid"
                         style="width: 160px; height: auto"
                         alt="icono"
+                        loading="lazy"
                       />
                       <div class="text-fix-item text-center">
                         <h4>Sistemas de Riego</h4>
@@ -212,6 +222,7 @@ $_SESSION['num2'] = rand(1, 10);
                         class="img-fluid"
                         style="width: 160px; height: auto"
                         alt="icono"
+                        loading="lazy"
                       />
                       <div class="text-fix-item text-center">
                         <h4>Provisión de Personal</h4>
@@ -245,15 +256,15 @@ $_SESSION['num2'] = rand(1, 10);
                 <div class="carousel-inner">
                   <!-- Imagen 1 -->
                   <div class="carousel-item active">
-                    <img src="assets/img/sliders/turftype-mercadolibre-01.jpg" class="d-block w-100" alt="Imagen Mercadolibre 1">
+                    <img src="assets/img/sliders/turftype-mercadolibre-01.jpg" class="d-block w-100" alt="Imagen Mercadolibre 1" loading="lazy">
                   </div>
                   <!-- Imagen 2 -->
                   <div class="carousel-item">
-                    <img src="assets/img/sliders/turftype-mercadolibre-02.jpg" class="d-block w-100" alt="Imagen Mercadolibre 2">
+                    <img src="assets/img/sliders/turftype-mercadolibre-02.jpg" class="d-block w-100" alt="Imagen Mercadolibre 2" loading="lazy">
                   </div>
                   <!-- Imagen 3 -->
                   <div class="carousel-item">
-                    <img src="assets/img/sliders/turftype-mercadolibre-03.jpg" class="d-block w-100" alt="Imagen Mercadolibre 3">
+                    <img src="assets/img/sliders/turftype-mercadolibre-03.jpg" class="d-block w-100" alt="Imagen Mercadolibre 3" loading="lazy">
                   </div>
                 </div>
                 <!-- Flechas de navegación -->
@@ -284,11 +295,11 @@ $_SESSION['num2'] = rand(1, 10);
                 <div class="carousel-inner">
                   <!-- Imagen 1 -->
                   <div class="carousel-item active">
-                    <img src="assets/img/sliders/turftype-anima-01.jpg" class="d-block w-100" alt="Imagen Ánima 1">
+                    <img src="assets/img/sliders/turftype-anima-01.jpg" class="d-block w-100" alt="Imagen Ánima 1" loading="lazy">
                   </div>
                   <!-- Imagen 2 -->
                   <div class="carousel-item">
-                    <img src="assets/img/sliders/turftype-anima-02.jpg" class="d-block w-100" alt="Imagen Ánima 2">
+                    <img src="assets/img/sliders/turftype-anima-02.jpg" class="d-block w-100" alt="Imagen Ánima 2" loading="lazy">
                   </div>                  
                 </div>
                 <!-- Flechas de navegación -->
@@ -325,28 +336,28 @@ $_SESSION['num2'] = rand(1, 10);
             <div class="row">
               <!-- Primera fila: 4 imágenes -->
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_mercado-libre.webp" class="img-fluid" alt="Ejecución de Proyectos de Paisaje. Servicio de Mantenimiento.">
+                <img src="assets/img/turftype-clientes_mercado-libre.webp" class="img-fluid" alt="Ejecución de Proyectos de Paisaje. Servicio de Mantenimiento." loading="lazy">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_experta.webp" class="img-fluid" alt="Construcción de terraza verde. Mantenimiento y mejoramiento de jardín vertical.">
+                <img src="assets/img/turftype-clientes_experta.webp" class="img-fluid" alt="Construcción de terraza verde. Mantenimiento y mejoramiento de jardín vertical." loading="lazy">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_bricons.webp" class="img-fluid" alt="Servicio de Corte Mensual.">
+                <img src="assets/img/turftype-clientes_bricons.webp" class="img-fluid" alt="Servicio de Corte Mensual." loading="lazy">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_mirabosques.webp" class="img-fluid" alt="Corte y mantenimiento de espacios verdes.">
+                <img src="assets/img/turftype-clientes_mirabosques.webp" class="img-fluid" alt="Corte y mantenimiento de espacios verdes." loading="lazy">
               </div>
             </div>          
             <div class="row justify-content-center">
               <!-- Segunda fila: 3 imágenes centradas -->
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_go-team-pilar.webp" class="img-fluid" alt="Corte mensual.">
+                <img src="assets/img/turftype-clientes_go-team-pilar.webp" class="img-fluid" alt="Corte mensual." loading="lazy">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_club-nautico-san-isidro.webp" class="img-fluid" alt="Construcción de senderos intertrabados. Ejecución de Proyectos de Paisaje. Personal Eventual para el Golf. Construcción de Drenajes, Nivelaciónes y Colocación de Carpetas de Césped en Cancha de Golf.">
+                <img src="assets/img/turftype-clientes_club-nautico-san-isidro.webp" class="img-fluid" alt="Construcción de senderos intertrabados. Ejecución de Proyectos de Paisaje. Personal Eventual para el Golf. Construcción de Drenajes, Nivelaciónes y Colocación de Carpetas de Césped en Cancha de Golf." loading="lazy">
               </div>
               <div class="col-md-3 d-flex justify-content-center mb-4">
-                <img src="assets/img/turftype-clientes_pilara.webp" class="img-fluid" alt="Mantenimiento mensual en espacios verdes y mejora del paisaje.">
+                <img src="assets/img/turftype-clientes_pilara.webp" class="img-fluid" alt="Mantenimiento mensual en espacios verdes y mejora del paisaje." loading="lazy">
               </div>
             </div>
           </div>
@@ -354,27 +365,27 @@ $_SESSION['num2'] = rand(1, 10);
             <div class="carousel-inner">
               <!-- Imagen 1 -->
               <div class="carousel-item active">
-                <img src="assets/img/sliders/turftype-casos-01.jpg" class="d-block w-100" alt="Imagen Ánima 1">
+                <img src="assets/img/sliders/turftype-casos-01.jpg" class="d-block w-100" alt="Imagen casos 1" loading="lazy">
               </div>
               <!-- Imagen 2 -->
               <div class="carousel-item">
-                <img src="assets/img/sliders/turftype-casos-02.jpg" class="d-block w-100" alt="Imagen Ánima 2">
+                <img src="assets/img/sliders/turftype-casos-02.jpg" class="d-block w-100" alt="Imagen casos 2" loading="lazy">
               </div>
               <!-- Imagen 3 -->
               <div class="carousel-item">
-                <img src="assets/img/sliders/turftype-casos-03.jpg" class="d-block w-100" alt="Imagen Ánima 2">
+                <img src="assets/img/sliders/turftype-casos-03.jpg" class="d-block w-100" alt="Imagen casos 3" loading="lazy">
               </div> 
               <!-- Imagen 4 -->
               <div class="carousel-item">
-                <img src="assets/img/sliders/turftype-casos-04.jpg" class="d-block w-100" alt="Imagen Ánima 2">
+                <img src="assets/img/sliders/turftype-casos-04.jpg" class="d-block w-100" alt="Imagen casos 4" loading="lazy">
               </div> 
               <!-- Imagen 5 -->
               <div class="carousel-item">
-                <img src="assets/img/sliders/turftype-casos-05.jpg" class="d-block w-100" alt="Imagen Ánima 2">
+                <img src="assets/img/sliders/turftype-casos-05.jpg" class="d-block w-100" alt="Imagen casos 5" loading="lazy">
               </div> 
               <!-- Imagen 6 -->
               <div class="carousel-item">
-                <img src="assets/img/sliders/turftype-casos-06.jpg" class="d-block w-100" alt="Imagen Ánima 2">
+                <img src="assets/img/sliders/turftype-casos-06.jpg" class="d-block w-100" alt="Imagen casos 6" loading="lazy">
               </div>                   
             </div>
             <!-- Flechas de navegación -->
@@ -413,6 +424,7 @@ $_SESSION['num2'] = rand(1, 10);
                 src="assets/img/turftype-espacios-verdes.webp"
                 alt="Logo de Turftype espacios verdes"
                 class="img-fluid w-25 mb-3"
+                loading="lazy"
               />
               <span>Asesoramiento Experto</span>
               <p>011 5111-6776</p>
@@ -539,7 +551,7 @@ $_SESSION['num2'] = rand(1, 10);
     ></a>
 
     <a id="whatsapp-button" class="whatsapp-button" href="https://api.whatsapp.com/send?phone=+541151116776&text=Hola,%20necesito%20asesorameinto%20especializado%20en%20jardiner%C3%ADa..." target="_blank">
-      <img src="assets/img/whatsapp-logo.svg" alt="WhatsApp">
+      <img src="assets/img/whatsapp-logo.svg" alt="WhatsApp" loading="lazy">
   </a>
 
     <!-- Vendor JS Files -->
