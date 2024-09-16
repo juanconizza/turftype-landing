@@ -58,6 +58,10 @@ $_SESSION['num2'] = rand(1, 10);
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+<!-- Gtag Adwords -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11407146291"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11407146291'); </script>
+
 <!-- Google Analytics tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JQTL8B0YF"></script>
 <script>
