@@ -58,18 +58,14 @@ $_SESSION['num2'] = rand(1, 10);
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-<!-- Gtag Adwords -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11407146291"></script>
-<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11407146291'); </script>
 
-<!-- Google Analytics tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5JQTL8B0YF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5JQTL8B0YF');
-  gtag('config', 'AW-11407146291');
+<!-- Google tag (gtag.js) --> 
+ <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11407146291"></script> 
+ <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11407146291'); </script>
+
+ <!-- Conversion Formulario -->
+ <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-11407146291/K5sjCJ-uh9EZELP6rL8q', 'event_callback': callback }); return false; } </script>
+
 </script>
   </head>
 
