@@ -61,11 +61,7 @@ $_SESSION['num2'] = rand(1, 10);
 
 <!-- Google tag (gtag.js) --> 
  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11407146291"></script> 
- <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11407146291'); </script>
-
- <!-- Conversion Formulario -->
- <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-11407146291/K5sjCJ-uh9EZELP6rL8q', 'event_callback': callback }); return false; } </script>
-
+ 
 </script>
   </head>
 
@@ -570,8 +566,6 @@ $_SESSION['num2'] = rand(1, 10);
       }
     });
   </script>
-
-  
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
